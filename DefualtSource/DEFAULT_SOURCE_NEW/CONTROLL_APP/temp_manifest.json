@@ -1,0 +1,92 @@
+{
+    "INFO_APP": {
+        "EMAIL_CONTRACT": "vuphoapp2021@gmail.com",
+        "APPSTORE_URL": "https://apps.apple.com/us/app/mymusic-offline-music-player/id1588911860",
+        "PRIVACY": "https://telegra.ph/Privacy-Policy-10-15-52",
+        "SECRET_PASS": "1b1f1309201b4ef68f50396547f67ef9",
+        "SUBCRIPTION_TEXT": "Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal. Subscriptions may be managed by the user and auto-renewal may be turned off in your Apple ID Account Settings after purchases",
+        "TERM": "https://telegra.ph/Terms--Conditions-10-15-2",
+        "VERIFY_RECEIPT": "https://buy.itunes.apple.com/verifyReceipt",
+        "KEYDECRYPTEBTEXT": "28 02 98 16 87 b6 bc 2c 93 89 c3 34 9f dc 17 fb 3d fb ba 62 24 af fb 76 76 e1 33 79 26 cd d6 02"
+    },
+    "IAP":[
+        {
+            "DESCRIPTION": "Plan auto-renews for 0.99$ / week",
+            "KEY": "week",
+            "PRICE": "0.99$",
+            "PRODUCT_ID": "cyc.trung.musi",
+            "TITLE": "WEEKLY",
+            "PERCENT_DISCOUNT": "",
+            "OTHER_INFOMATION": ""
+        },
+        {
+            "DESCRIPTION": "Plan auto-renews for 2.99$/week",
+            "KEY": "month",
+            "PRICE": "2.99$",
+            "PRODUCT_ID": "cyc.trung.musi",
+            "TITLE": "MONTHLY",
+            "PERCENT_DISCOUNT": "-25%",
+            "OTHER_INFOMATION": ""
+        }, {
+            "DESCRIPTION": "Plan auto-renews for 9.99$/month",
+            "KEY": "year",
+            "PRICE": "$9.99",
+            "PRODUCT_ID": "cyc.trung.musi.yearly 9.99$/year",
+            "TITLE": "YEARLY",
+            "PERCENT_DISCOUNT": "-81%",
+            "OTHER_INFOMATION": ""
+        }
+    ],
+    "ADS": {
+        "APP_ID_RECOMMEND" : "1440611372",
+        "BANNER_ID": "ca-app-pub-3940256099942544/2934735716",
+        "NATIVE_ID": "ca-app-pub-3940256099942544/3986624511",
+        "OPEN_APP_ID": "ca-app-pub-3940256099942544/5662855259",
+        "REWARDED_ID": "ca-app-pub-3940256099942544/1712485313",
+        "INTERSTITIAL_ID": "ca-app-pub-3940256099942544/4411468910",
+        "ENABLE_RECOMMEND": true,
+        "ENABLE_REWARDED": true,
+        "ENABLE_OPEN_APP": true,
+        "ENABLE_BANNER": true,
+        "ENABLE_INTERSTITIAL": true,
+        "ENABLE_NATIVE": false,
+        "LIMIT_FREE_WITH_REWARDED": 99,
+        "INTERVAL_APP_OPEN": 60,
+        "INTERVAL_INTERSTITIAL": 10
+    },
+    "URL": {
+        "PATH_GIFTCODE" : "giftcode",
+        "LINK_FANAPGE" : "http://www.facebook.com/MetaVietnam",
+        "LINK_SCHEME_FANPAGE" : "fb://profile/108824017345866",
+        "FORM_FEEBACK": "https://forms.gle/HMGm1gUSSpWFkEGQ8",
+        "LINK_GARAGEBAND": "https://apps.apple.com/us/app/garageband/id408709785",
+        "LINK_API_CATEGORY" : "https://ring.daktech.co/list_category",
+        "LINK_LIST_RINGTONE" : "https://ring.daktech.co/ringtone?sortby=download",
+        "LINK_CATEGORY_WALLPAPER" : "https://aiby.mobi/widget/json/v1.54/release/wallpapers.json",
+        "LINK_CATEGORY_LIVE_WALLPAPER" : "https://aiby.mobi/widget/json/v1.54/release/liveWallpapers.json",
+        "LINK_SEARCH_RINGTONE" : "https://ring.daktech.co/ringtone?sortby=download&title="
+    },
+    "DESIGN": {
+        "ACTIVE_NEW_DESIGN" : true,
+        "ACTIVE_HIDDEN" : true,
+        "ACTIVE_MORE_APP": false,
+        "ENABLE_GIFT": true,
+        "ENABLE_FANPAGE": true,
+        "ACTIVE_SHOW_RATE_WHEN_OPEN_APP": true,
+        "ENABLE_CACHE": true,
+        "ENABLE_ADVANCED_MODE_EDITOR": true
+    },
+    "APP_NAVIGATION": {
+        "IS_SHOW_ALWAYS": false,
+        "ENABLE" : true,
+        "TITLE" : "Title",
+        "MESSAGE": "Message",
+        "IMAGE_URL": "https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/96/33/fc/9633fc94-4ff0-e3aa-7669-5b081cefad2f/AppIconMac-0-2x_U007euniversal-0-4-0-0-0-85-220-0.png/246x0w.webp",
+        "URL": "https://apps.apple.com/us/app/mymusic-offline-music-player/id1588911860",
+        "BUTTON_NAME": "OK",
+        "COLOR_BACKGROUND": "ffffff",
+        "COLOR_TEXT": "000000",
+        "COLOR_BUTTON_BACKGROUND": "00CC51",
+        "COLOR_BUTTON_TEXT" : "00CC51"
+    }
+}

@@ -36,7 +36,7 @@ struct PopupAddIdContact: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.bottom,15)
             }
-            TextField("Enter phone number", text: $phone)
+            TextField("+\(CountryCodeViewModel.shared.selectedCountryCode)", text: $phone)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .keyboardType(.numberPad)
                 .padding(.bottom,25)
@@ -53,7 +53,7 @@ struct PopupAddIdContact: View {
                         contactViewModel.addIdentification(phone: phone, name: name)
                     }
                 }else{
-                    contactViewModel.deleteIdentification(phone: phone, name: name)
+                    contactViewModel.deleteIdentification(phone: phone)
                 }
                 
                 withAnimation {

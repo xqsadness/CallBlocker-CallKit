@@ -14,7 +14,7 @@ struct ContactBlockedView: View {
     @StateObject var contactViewModel = ContactViewModel.shared
     @Environment(\.dismiss) var dismiss
     @State private var showingAlert = false
-    @State private var phone = ""
+    @State private var showAlertDeleteAll = false
     
     var body: some View {
         VStack{
@@ -26,35 +26,64 @@ struct ContactBlockedView: View {
                     .onTapGesture {
                         dismiss()
                     }
+                
                 Spacer()
-                Text("Contact Blocked")
+                
+                Text("Contact Blocked (\(blockeds.count))")
                     .font(.regular(size: 19))
                     .foregroundColor(.text)
                 Spacer()
+                
                 Image(systemName: "plus.app")
                     .imageScale(.large)
                     .foregroundColor(.blue)
-                    .padding(.horizontal)
+                    .padding(.trailing,5)
                     .onTapGesture {
-                        phone = ""
+                        contactViewModel.phoneNumberAdd = ""
                         showingAlert.toggle()
+                    }
+                
+                Image(systemName: "trash.slash")
+                    .imageScale(.large)
+                    .foregroundColor(.blue)
+                    .padding(.trailing)
+                    .onTapGesture {
+                        showAlertDeleteAll.toggle()
                     }
             }
             .alert("Add phone blocked", isPresented: $showingAlert) {
-                TextField("Enter phone number blocked.", text: $phone)
+                TextField("Enter phone number blocked.", text: $contactViewModel.phoneNumberAdd)
                     .keyboardType(.numberPad)
                 
                 Button("OK", action: {
-                    if !phone.isEmpty{
-                        contactViewModel.addPhoneNumberBlocked(phoneNumber: phone, name: "")
+                    if !contactViewModel.phoneNumberAdd.isEmpty{
+                        contactViewModel.addPhoneNumberBlocked(phoneNumber: contactViewModel.phoneNumberAdd, name: "")
                     }else{
-                        LocalNotification.shared.message("Please Enter Phone", .warning)
+                        LocalNotification.shared.message("Please Enter Phone", . warning)
                     }
                 })
             } message: {
-                Text("Enter phone number blocked")
+                Text("Your Country Code Is: +\(CountryCodeViewModel.shared.selectedCountryCode)")
             }
+            .alert(isPresented: $showAlertDeleteAll) {
+                Alert(
+                    title: Text("Delete All Contact Blocked"),
+                    message: Text("Are you sure want to delete all contact blocked."),
+                    primaryButton: .default(
+                        Text("Cancel"),
+                        action: {}
+                    ),
+                    secondaryButton: .destructive(
+                        Text("Delete"),
+                        action: {withAnimation {
+                            contactViewModel.deleteAllPhoneNumberBlocked()
+                        }}
+                    )
+                )
+            }
+            
             Spacer()
+            
             if blockeds.isEmpty{
                 Text("No contact blocked !")
                     .hAlign(.center)
@@ -64,7 +93,7 @@ struct ContactBlockedView: View {
             }else{
                 List{
                     ForEach(blockeds, id: \.id) { contact in
-                        Text("\(contact.name):\(contact.phoneNumber)")
+                        Text("\(contact.name) : +\(contact.phoneNumber)")
                             .hAlign(.leading)
                             .contentShape(Rectangle())
                             .onTapGesture {
@@ -78,3 +107,4 @@ struct ContactBlockedView: View {
         //        .navigationTitle("Blocked Contacts")
     }
 }
+

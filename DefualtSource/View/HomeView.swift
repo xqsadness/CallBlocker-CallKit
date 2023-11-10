@@ -18,10 +18,22 @@ struct HomeView: View {
         NavigationView {
             VStack{
                 HStack{
+                    Text("All Contacts")
+                        .foregroundColor(.text)
+                        .font(.system(.largeTitle))
+                        .bold()
+                    Spacer()
+                    
+                    CountryCodePicker()
+                }
+                .padding(.horizontal)
+                .padding(.bottom,5)
+                
+                HStack{
                     NavigationLink{
                         ContactBlockedView()
                     }label: {
-                        Text("List Blocked Contact")
+                        Text("List Contact Blocked")
                             .foregroundColor(.blue)
                             .font(.regular(size: 17))
                     }
@@ -59,7 +71,6 @@ struct HomeView: View {
             .popup(isPresented: $showingPopup){
                 PopupAddIdContact(showingPopup: $showingPopup)
             }
-            .navigationTitle("All Contacts")
             .onAppear {
                 if let userDefaults = UserDefaults(suiteName: "group.com.blockedContact") {
                     userDefaults.set("__.__" as AnyObject, forKey: "ios")

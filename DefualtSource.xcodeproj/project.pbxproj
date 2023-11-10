@@ -70,13 +70,15 @@
 		DD3A68832AFC7DD300682A8C /* ItemAllContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3A68822AFC7DD300682A8C /* ItemAllContactView.swift */; };
 		DD3A68852AFC83C600682A8C /* PopupAddIdContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3A68842AFC83C600682A8C /* PopupAddIdContact.swift */; };
 		DD3A68862AFC974500682A8C /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D9BB22AFB962D00F7021B /* CallDirectoryHandler.swift */; };
+		DD3DD5492AFDD49D00B1444F /* CountryCodePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD5482AFDD49D00B1444F /* CountryCodePicker.swift */; };
+		DD3DD54B2AFDD4DA00B1444F /* CountryCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD54A2AFDD4DA00B1444F /* CountryCodeViewModel.swift */; };
+		DD3DD54D2AFE28C100B1444F /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD54C2AFE28C100B1444F /* ContactViewModel.swift */; };
 		DD4631822AB14DC800E56F71 /* RoundedCross.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46317E2AB14DC800E56F71 /* RoundedCross.swift */; };
 		DD4631832AB14DC800E56F71 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46317F2AB14DC800E56F71 /* Triangle.swift */; };
 		DD4631842AB14DC800E56F71 /* SlimRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4631802AB14DC800E56F71 /* SlimRectangle.swift */; };
 		DD4631852AB14DC800E56F71 /* ConfettiSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4631812AB14DC800E56F71 /* ConfettiSwiftUI.swift */; };
 		DD4AC2E52AB06F5A00A6F3C5 /* PremiumDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AC2E42AB06F5A00A6F3C5 /* PremiumDefaultView.swift */; };
 		DD4AC2E72AB06F6D00A6F3C5 /* ListChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AC2E62AB06F6D00A6F3C5 /* ListChooseView.swift */; };
-		DD4D9BAA2AFB87C400F7021B /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D9BA92AFB87C400F7021B /* ContactViewModel.swift */; };
 		DD4D9BB72AFB962D00F7021B /* CallDirectoryHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD4D9BB02AFB962D00F7021B /* CallDirectoryHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD5079FE2AD7EE5500D6535C /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5079FD2AD7EE5500D6535C /* Particle.swift */; };
 		DD507A022AD7EE7600D6535C /* ParticleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD507A002AD7EE7600D6535C /* ParticleEffect.swift */; };
@@ -189,6 +191,9 @@
 		DD3A68802AFC7D0D00682A8C /* ContactBlockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactBlockedView.swift; sourceTree = "<group>"; };
 		DD3A68822AFC7DD300682A8C /* ItemAllContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAllContactView.swift; sourceTree = "<group>"; };
 		DD3A68842AFC83C600682A8C /* PopupAddIdContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAddIdContact.swift; sourceTree = "<group>"; };
+		DD3DD5482AFDD49D00B1444F /* CountryCodePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodePicker.swift; sourceTree = "<group>"; };
+		DD3DD54A2AFDD4DA00B1444F /* CountryCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeViewModel.swift; sourceTree = "<group>"; };
+		DD3DD54C2AFE28C100B1444F /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		DD46317E2AB14DC800E56F71 /* RoundedCross.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCross.swift; sourceTree = "<group>"; };
 		DD46317F2AB14DC800E56F71 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		DD4631802AB14DC800E56F71 /* SlimRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimRectangle.swift; sourceTree = "<group>"; };
@@ -196,7 +201,6 @@
 		DD4AC2E42AB06F5A00A6F3C5 /* PremiumDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumDefaultView.swift; sourceTree = "<group>"; };
 		DD4AC2E62AB06F6D00A6F3C5 /* ListChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChooseView.swift; sourceTree = "<group>"; };
 		DD4D9BA72AFB86E800F7021B /* DefualtSource.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DefualtSource.entitlements; sourceTree = "<group>"; };
-		DD4D9BA92AFB87C400F7021B /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		DD4D9BB02AFB962D00F7021B /* CallDirectoryHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4D9BB22AFB962D00F7021B /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
 		DD4D9BB42AFB962D00F7021B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,7 +284,8 @@
 		CA5FEB152AA856EB00226CF2 /* DefualtSource */ = {
 			isa = PBXGroup;
 			children = (
-				DD4D9BA82AFB87B300F7021B /* Handler */,
+				DD3DD5472AFDB8C000B1444F /* ViewModels */,
+				DD3DD5462AFDB8BC00B1444F /* View */,
 				CA5FEB162AA856EB00226CF2 /* DefualtSourceApp.swift */,
 				CA5FEB182AA856EB00226CF2 /* ContentView.swift */,
 				CA5FEB1A2AA856EC00226CF2 /* Assets.xcassets */,
@@ -446,6 +451,27 @@
 			path = ViewModifier;
 			sourceTree = "<group>";
 		};
+		DD3DD5462AFDB8BC00B1444F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD3A68842AFC83C600682A8C /* PopupAddIdContact.swift */,
+				DD3A68822AFC7DD300682A8C /* ItemAllContactView.swift */,
+				DD3A68802AFC7D0D00682A8C /* ContactBlockedView.swift */,
+				DD561FFD2AAF1756007FFDC6 /* HomeView.swift */,
+				DD3DD5482AFDD49D00B1444F /* CountryCodePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD3DD5472AFDB8C000B1444F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DD3DD54A2AFDD4DA00B1444F /* CountryCodeViewModel.swift */,
+				DD3DD54C2AFE28C100B1444F /* ContactViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		DD46317C2AB14DC800E56F71 /* ConfettiSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,18 +503,6 @@
 				DD4AC2E62AB06F6D00A6F3C5 /* ListChooseView.swift */,
 			);
 			path = DefaultView;
-			sourceTree = "<group>";
-		};
-		DD4D9BA82AFB87B300F7021B /* Handler */ = {
-			isa = PBXGroup;
-			children = (
-				DD561FFD2AAF1756007FFDC6 /* HomeView.swift */,
-				DD4D9BA92AFB87C400F7021B /* ContactViewModel.swift */,
-				DD3A68802AFC7D0D00682A8C /* ContactBlockedView.swift */,
-				DD3A68822AFC7DD300682A8C /* ItemAllContactView.swift */,
-				DD3A68842AFC83C600682A8C /* PopupAddIdContact.swift */,
-			);
-			path = Handler;
 			sourceTree = "<group>";
 		};
 		DD4D9BB12AFB962D00F7021B /* CallDirectoryHandler */ = {
@@ -681,6 +695,7 @@
 				DDADE68D2AAAD17F00A387CC /* UpdateVersionView.swift in Sources */,
 				DD139C272AA860F800FA7734 /* Date.swift in Sources */,
 				DD3A68852AFC83C600682A8C /* PopupAddIdContact.swift in Sources */,
+				DD3DD54D2AFE28C100B1444F /* ContactViewModel.swift in Sources */,
 				DD139C432AA866E600FA7734 /* APPCONTROLLER.swift in Sources */,
 				DD4AC2E72AB06F6D00A6F3C5 /* ListChooseView.swift in Sources */,
 				DD139C172AA860F800FA7734 /* Image.swift in Sources */,
@@ -696,12 +711,12 @@
 				DD561FFE2AAF1756007FFDC6 /* HomeView.swift in Sources */,
 				DD139C712AA874A200FA7734 /* Alerter.swift in Sources */,
 				DD139BFD2AA85F4E00FA7734 /* CONSTANT.swift in Sources */,
+				DD3DD5492AFDD49D00B1444F /* CountryCodePicker.swift in Sources */,
 				DD139C452AA867FC00FA7734 /* Coordinator.swift in Sources */,
 				DD139C7C2AA889A200FA7734 /* CustomButtonModifier.swift in Sources */,
 				DD507A022AD7EE7600D6535C /* ParticleEffect.swift in Sources */,
 				DDADB6692AA97EA100DE4E85 /* LoadingView.swift in Sources */,
 				DD528DFF2AD681DD0030DCB9 /* PageIntro.swift in Sources */,
-				DD4D9BAA2AFB87C400F7021B /* ContactViewModel.swift in Sources */,
 				DD139BFA2AA85F0E00FA7734 /* User.swift in Sources */,
 				DD4631852AB14DC800E56F71 /* ConfettiSwiftUI.swift in Sources */,
 				DD139C642AA871AA00FA7734 /* TextView.swift in Sources */,
@@ -729,6 +744,7 @@
 				DD4631832AB14DC800E56F71 /* Triangle.swift in Sources */,
 				DD139C652AA871AA00FA7734 /* Shimmer.swift in Sources */,
 				DD561FFC2AAF16BC007FFDC6 /* NotificationView.swift in Sources */,
+				DD3DD54B2AFDD4DA00B1444F /* CountryCodeViewModel.swift in Sources */,
 				DD139C662AA871AA00FA7734 /* CircleProgressView.swift in Sources */,
 				DDADE68F2AAAF9EC00A387CC /* VersionApp.swift in Sources */,
 				CA5FEB192AA856EB00226CF2 /* ContentView.swift in Sources */,

@@ -18,12 +18,8 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
             let handleTypeContact = userDefaults.string(forKey: "handleTypeContact")
             
             let nameID = userDefaults.string(forKey: "nameID")
-            var phoneNumberAdd = userDefaults.string(forKey: "phoneNumberAdd")
-            var phoneNumberDelete = userDefaults.string(forKey: "phoneNumberDelete")
-            
-            // Replace the leading zero with 84 or a country calling code if necessary
-            phoneNumberAdd = phoneNumberAdd?.replaceLeadingZeroWith84()
-            phoneNumberDelete = phoneNumberDelete?.replaceLeadingZeroWith84()
+            let phoneNumberAdd = userDefaults.string(forKey: "phoneNumberAdd")
+            let phoneNumberDelete = userDefaults.string(forKey: "phoneNumberDelete")
             
             // Add or remove phone numbers from the block list and Identification based on the HandleTypeContact enum
             switch handleTypeContact {
@@ -47,6 +43,12 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
                 if let phInt = Int64(phoneNumberAdd ?? "") {
                     context.removeIdentificationEntry(withPhoneNumber: phInt)
                 }
+            case HandleTypeContact.deleteAllBlocked.rawValue:
+                // Handling when handleTypeContact is "deleteAllBlocked"
+                context.removeAllBlockingEntries()
+            case HandleTypeContact.deleteAllIdentification.rawValue:
+                // Handling when handleTypeContact is "deleteAllIdentification"
+                context.removeAllIdentificationEntries()
             default:
                 // Handling the default case if handleTypeContact doesn't match any of the case values
                 print("error handleTypeContact")
@@ -148,4 +150,6 @@ enum HandleTypeContact: String{
     case addBlocked = "addBlocked"
     case deleteIdentification = "deleteIdentification"
     case addIdentification = "addIdentification"
+    case deleteAllBlocked = "deleteAllBlocked"
+    case deleteAllIdentification = "deleteAllIdentification"
 }
